@@ -143,17 +143,21 @@
 {
     if (self.refreshing != true)
     {
-        if (self.tableView.contentOffset.y < -55) {
+        if (self.tableView.contentOffset.y < -40) {
             self.refreshLabel.text = @"Release to Refresh";
         }
         else {
             self.refreshLabel.text = @"Pull to Refresh";
         }
     }
+    
+    if (self.tableView.contentOffset.y < -50) {
+        self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x,-50);
+    }
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    if (self.tableView.contentOffset.y < -55)
+    if (self.tableView.contentOffset.y < -40)
     {
         self.refreshing = true;
         [self pullToRefresh];
