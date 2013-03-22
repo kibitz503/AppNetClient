@@ -255,7 +255,7 @@
 -(CGFloat)getTextHeight:(NSString*)text
 {
     CGSize labelsize = [text sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:CGSizeMake(210, 2000.0) lineBreakMode:NSLineBreakByCharWrapping];
-    return labelsize.height + 10;
+    return labelsize.height + 15;
 }
 
 -(void)setupNav
