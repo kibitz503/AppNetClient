@@ -151,8 +151,8 @@
         }
     }
     
-    if (self.tableView.contentOffset.y < -50) {
-        self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x,-50);
+    if (self.tableView.contentOffset.y < -70) {
+        self.tableView.contentOffset = CGPointMake(self.tableView.contentOffset.x,-70);
     }
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
