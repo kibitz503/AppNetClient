@@ -1,0 +1,10 @@
+# Xcode
+.DS_Store
+build/
+*.svn*
+xcdebugger
+launch.rb
+screenshot*
+Frank*
+features*
+calabash*
